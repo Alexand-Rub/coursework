@@ -14,18 +14,21 @@
         </div>
     </header>
     <div class="content"> 
-        <section class="options">
-            <h2 class="options-h">Варианты</h2>
-            <button class="options-btn">Вариант 1</button>
-            <button class="options-btn">Вариант 2</button>
-            <button class="options-btn">Вариант 3</button>
-            <button class="options-btn">Вариант 4</button>
-            <p>Выберете вариант кроссворда для решения</p>
-        </section>
-        <main>
-            <section class="crossword">
-            <!-- ссылка для проверки отправки формы -->
-            <form action="https://jsonplaceholder.typicode.com/posts" autocomplete method="POST">
+        <main class="main">
+            <div class="main-left">
+                <section class="options">
+                    <h2 class="options-h">Варианты</h2>
+                    <div class="options-blok">
+                        <button class="options-btn">Вариант 1</button>
+                        <button class="options-btn">Вариант 2</button>
+                        <button class="options-btn">Вариант 3</button>
+                        <button class="options-btn">Вариант 4</button>
+                    </div>
+                    <p class="options-p">Выберете вариант кроссворда для решения</p>
+                </section>
+                <section class="crossword">
+                    <!-- ссылка для проверки отправки формы -->
+                    <form action="https://jsonplaceholder.typicode.com/posts" autocomplete method="POST">
                 <table>
                     <!-- клетки с input пронумерованни с соответствием с местом в таплице -->
                     <tr>
@@ -442,19 +445,22 @@
                     </tr>
                 </table>
                 <button class="verify">Проверить</button>
-            </form>
-            <div class="questions">
-                <ol class="list">
-                    <li class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, quasi.</li>
-                    <li class="item">Lorem ipsum dolor sit amet.</li>
-                    <li class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quos sint asperiores corrupti molestiae? Tempore.</li>
-                    <li class="item"></li>
-                    <li class="item"></li>
-                    <li class="item"></li>
-                    <li class="item"></li>
-                </ol>
+                    </form>
+                </section>
             </div>
-            </section>
+            <div class="questions">
+                <div class="questions-blok">
+                    <ol class="questions-list">
+                        <li class="questions-item">Алгоритм, записанный на «понятном» компьютеру языке программирования.</li>
+                        <li class="questions-item">Набор символов, показывающий расположение файла или каталога в файловой системе.</li>
+                        <li class="questions-item">Это либо любой адресуемый элемент, который предоставляет определенный сервис, либо предмет, система, процесс, явление, событие, факт, которым мы дали имя с целью их анализа.</li>
+                        <li class="questions-item">Упорядоченный набор фиксированной длины.</li>
+                        <li class="questions-item">Представление некоторого объекта в общих, главных чертах с помощью условных обозначений.</li>
+                        <li class="questions-item">Группа ячеек,расположенных в одном вертикальном ряду таблицы.</li>
+                        <li class="questions-item">Операционный тип взаимодействия между субъектом и объектом, в результате которого создается поток информации от одного к другому.</li>
+                    </ol>
+                </div>
+            </div>
         </main>
     </div>
     <footer class="footer">

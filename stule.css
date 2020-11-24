@@ -6,14 +6,15 @@ h1,h2,p {
     margin: 0;
 }
 
-section,
-.header {
+.header,
+.options,
+main {
     margin-bottom: 20px;
 }
 
-.content {
+.content{
     margin: 0 auto;
-    width: 1000px;
+    width: 1100px;
 }
 
 .header {
@@ -29,8 +30,13 @@ section,
     text-align: center;
 }
 
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
 .options {
-    width: 542px;
     text-align: center;
 }
 
@@ -42,9 +48,8 @@ section,
     margin-bottom: 20px;
 }
 
-.crossword {
-    display: flex;
-    justify-content: space-between;
+.options-btn:not(:last-child) {
+    margin-right: 10px;
 }
 
 .cell,
@@ -80,19 +85,30 @@ section,
 }
 
 .questions {
-    width: 400px;
-    margin-bottom: 40px;
-    padding: 10px 10px 10px 0;
+    flex: 0 0 45%;
+}
+
+.questions-h {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.questions-blok {
+    padding-left: 30px;
+    padding-right: 10px;
+    height: 100%;
     border: 1px solid black;
     border-radius: 10px;
 }
 
-.list {
-    padding-left: 30px;
-}
+.questions-list {
+    padding-left: 0;
+} 
 
-.item {
-    margin-bottom: 10px;
+.questions-item {
+    margin-bottom: 20px;
+    font-size: 19px;
+    line-height: 20px;
 }
 
 .footer {
@@ -102,4 +118,23 @@ section,
 
 .footer-blok {
     padding: 20px 0;
+}
+
+@media (max-width:1100px) {
+    .content {
+        width: 500px;
+    }
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-left {
+        margin-bottom: 20px;
+    }
+    .questions-h {
+        text-align: left;
+    }
+    .questions-blok {
+        width: 100%;
+    }
 }
