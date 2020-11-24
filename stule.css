@@ -6,27 +6,32 @@ h1,h2,p {
     margin: 0;
 }
 
+section,
+.header {
+    margin-bottom: 20px;
+}
+
 .content {
     margin: 0 auto;
     width: 1000px;
 }
 
-header {
+.header {
     background-color: #5cb85c;
 }
 
 .header-blok {
-    display: flex;
-    justify-content: space-between;
     padding: 20px 0;
 }
 
 .header-h {
     color: white;
+    text-align: center;
 }
 
 .options {
-    padding-top: 20px;
+    width: 542px;
+    text-align: center;
 }
 
 .options-h {
@@ -40,8 +45,6 @@ header {
 .crossword {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding-top: 20px;
 }
 
 .cell,
@@ -92,3 +95,11 @@ header {
     margin-bottom: 10px;
 }
 
+.footer {
+    color: #bebebe;
+    background-color: #0f1f0f;
+}
+
+.footer-blok {
+    padding: 20px 0;
+}
