@@ -20,22 +20,9 @@
 }
 
 .cell-black {
+    color: white;
+    text-align: center;
     background-color: black;
-}
-
-.cell-nam {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.nam {
-    position: absolute;
-    left: 1px;
-    top: 1px;
-    font-size: 10px;
-    /* color: gray; */
-
 }
 
 .inp {
