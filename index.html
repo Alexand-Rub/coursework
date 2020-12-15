@@ -6,12 +6,21 @@
     <title>Document</title>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="stule.css">
+    <script src="login.js"></script>
 </head>
 <body>
     <header class="header">
         <div class="content header-blok"> 
-            <h1 class="header-h">Кроссворд по СПО</h1>
-            <p class="header-text">Группа М3О-236Б-19</p>
+            <div>
+                <h1 class="header-h">Кроссворд по СПО</h1>
+                <p class="header-text">Группа М3О-236Б-19</p>
+            </div>
+            <a id="link-login" class="header-link" href="#">Войти</a>
+            <form id="login" class="login not_shown" action="post">
+                <input class="int" type="text" name="login" placeholder="Логин">
+                <input class="int" type="password" name="password" placeholder="Пароль">
+                <button class="btn">Войти</button>
+            </form>
         </div>
     </header>
     <div class="content"> 
@@ -44,7 +53,6 @@
                         <td class="cell-black"></td>
                         <td class="cell-black"></td>
                         <td class="cell-black"></td>
-                        <td class="cell-black"></td>
                         <td class="cell-black">7</td>
                         <td class="cell-black"></td>
                         <td class="cell-black"></td>
@@ -53,7 +61,6 @@
                         <td class="cell-black"></td>
                     </tr>
                     <tr>
-                        <td class="cell-black"></td>
                         <td class="cell-black"></td>
                         <td class="cell-black"></td>
                         <td class="cell-black"></td>
@@ -77,7 +84,6 @@
                         <td class="cell-black"></td>
                     </tr>
                     <tr>
-                        <td class="cell-black"></td>
                         <td class="cell-black"></td>
                         <td class="cell-black"></td>
                         <td class="cell-black"></td>
@@ -134,7 +140,6 @@
                         <td class="cell-black"></td>
                         <td class="cell-black"></td>
                         <td class="cell-black"></td>
-                        <td class="cell-black"></td>
                         <td class="cell">
                             <div class="cell-nam">
                                 <input class="inp" name="cell-4-11" type="text" maxlength="1">
@@ -166,7 +171,6 @@
                         <td class="cell-black"></td>
                         <td class="cell-black"></td>
                         <td class="cell-black"></td>
-                        <td class="cell-black"></td>
                         <td class="cell">
                             <div class="cell-nam">
                                 <input class="inp" name="cell-5-11" type="text" maxlength="1">
@@ -195,7 +199,6 @@
                                 <input class="inp" name="cell-6-6" type="text" maxlength="1">
                             </div>
                         </td>
-                        <td class="cell-black"></td>
                         <td class="cell-black"></td>
                         <td class="cell-black"></td>
                         <td class="cell-black"></td>
@@ -263,11 +266,6 @@
                                 <input class="inp" name="cell-7-10" type="text" maxlength="1">
                             </div>
                         </td>
-                        <td class="cell">
-                            <div class="cell-nam">
-                                <input class="inp" name="cell-7-11" type="text" maxlength="1">
-                            </div>
-                        </td>
                         <td class="cell-black"></td>
                         <td class="cell">
                             <div class="cell-nam">
@@ -310,7 +308,6 @@
                         <td class="cell-black"></td>
                         <td class="cell-black"></td>
                         <td class="cell-black"></td>
-                        <td class="cell-black"></td>
                     </tr>
                     <tr>
                         <td class="cell-black"></td>
@@ -331,7 +328,6 @@
                                 <input class="inp" name="cell-9-6" type="text" maxlength="1">
                             </div>
                         </td>
-                        <td class="cell-black"></td>
                         <td class="cell-black"></td>
                         <td class="cell-black"></td>
                         <td class="cell-black"></td>
@@ -374,7 +370,6 @@
                         <td class="cell-black"></td>
                         <td class="cell-black"></td>
                         <td class="cell-black"></td>
-                        <td class="cell-black"></td>
                     </tr>
                     <tr>
                         <td class="cell-black"></td>
@@ -385,7 +380,6 @@
                                 <input class="inp" name="cell-11-4" type="text" maxlength="1">
                             </div>
                         </td>
-                        <td class="cell-black"></td>
                         <td class="cell-black"></td>
                         <td class="cell-black"></td>
                         <td class="cell-black"></td>
@@ -422,10 +416,8 @@
                         <td class="cell-black"></td>
                         <td class="cell-black"></td>
                         <td class="cell-black"></td>
-                        <td class="cell-black"></td>
                     </tr>
                     <tr>
-                        <td class="cell-black"></td>
                         <td class="cell-black"></td>
                         <td class="cell-black"></td>
                         <td class="cell-black"></td>
